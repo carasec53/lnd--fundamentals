@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning for Vitamin</title>
+    <link rel="stylesheet" href="app.css">
 </head>
 <h1>Favorites car</h1>
 <hr>
@@ -49,13 +50,34 @@
     <li><b>Dodge Challenger:</b> 72.000$</li>
 </ol>
 <h2> Tell me your favorite car</h2>
+<form action="https://www.google.com/search">
+    <div>
+        <label for="car">Check if this is your favorite car:</label>
+    </div>
+    <input type="text" name="q" placeholder="Car" required><br>
+    <button id="search">search</button>
+</form>
 <form action="/cars">
-
-    <label for="car">Enter a car: </label><input type="text" placeholder="Car"><br>
-    <label for="model">Enter a model: </label><input type="text" placeholder="Model"><br>
-    <label for="engine">Enter an engine: </label><input type="text" placeholder="Engine"><br>
-    <label for="hp">Enter horse power: </label><input type="text" placeholder="HP"><br>
-    <input type="submit" value="Submit">
+    <div class="car">
+        <div>
+            <label for="car">Enter a car: </label>
+            <input type="text" placeholder="Car" required>
+        </div>
+        <div>
+            <label for="model">Enter a model: </label>
+            <input type="text" placeholder="Model" required>
+        </div>
+        <div>
+            <label for="engine">Enter an engine: </label>
+            <input type="text" placeholder="Engine" required>
+        </div>
+        <div>
+            <label for="hp">Enter horse power: </label>
+            <input type="text" placeholder="HP" required>
+        </div>
+        <button id="submit">Submit</button>
+    </div>
+    </div>
 </form>
 
 <body>

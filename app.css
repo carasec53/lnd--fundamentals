@@ -1,0 +1,60 @@
+body {
+    background-color: #121212;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+}
+
+label {
+    color: white;
+}
+
+ol {
+    color: white;
+}
+
+table {
+    color: white;
+}
+
+h1,
+h2 {
+    color: white;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: grey;
+}
+
+#search:hover {
+    background-color: white;
+}
+
+form {
+    line-height: 1.5;
+}
+
+input[type="text"] {
+    width: 150px;
+    text-align: left;
+}
+
+.car {
+    text-align: left;
+    width: 150px;
+}
+
+#submit {
+    margin-left: 45px;
+}
