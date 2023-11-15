@@ -9,136 +9,6 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="app.css">
 </head>
-<h1>Favorites car</h1>
-<h2>Short story</h2>
-<p> In the last years, my passion for cars has truly taken off, and among my favorite vehicles, the <a
-        href="https://en.wikipedia.org/wiki/Porsche_992">Porsche
-        992</a>, <a href="https://en.wikipedia.org/wiki/BMW_M8">Bmw M8</a> and <a
-        href="https://en.wikipedia.org/wiki/Dodge_Challenger">Dodge Challenger</a> have become iconic choices for
-    me.</p>
-<h2>Card cars</h2>
-<section>
-    <div class="card">
-        <img src="https://www.dreamracing.com/assets/porsche-992-gt3.png">
-        <ul class="infos">
-            <li class="infos">
-                Car </li>
-            <li class="infos">Porsche</li>
-            <br>
-            <li class="infos">Model</li>
-            <li class="infos">992</li>
-            <br>
-            <li class="infos">Engine</li>
-            <li class="infos">4.0L</li>
-            <br>
-            <li class="infos">Horse Power</li>
-            <li class="infos">518</li>
-            <br>
-        </ul>
-    </div>
-    <div class="card">
-        <img src="https://freebiescloud.com/wp-content/uploads/2020/10/2-11.png" alt="BMW">
-        <ul class="infos">
-            <li class="infos">
-                Car </li>
-            <li class="infos">BMW</li>
-            <br>
-            <li class="infos">Model</li>
-            <li class="infos">M8</li>
-            <br>
-            <li class="infos">Engine</li>
-            <li class="infos">4.4L</li>
-            <br>
-            <li class="infos">Horse Power</li>
-            <li class="infos">617</li>
-            <br>
-        </ul>
-    </div>
-    <div class="card">
-        <img src="https://freepngimg.com/download/dodge_challenger/112155-dodge-challenger-hellcat-srt-free-hd-image.png"
-            alt="">
-        <ul class="infos">
-            <li class="infos">
-                Car </li>
-            <li class="infos">Dodge</li>
-            <br>
-            <li class="infos">Model</li>
-            <li class="infos">Challenger</li>
-            <br>
-            <li class="infos">Engine</li>
-            <li class="infos">6.2L</li>
-            <br>
-            <li class="infos">Horse Power</li>
-            <li class="infos">717</li>
-            <br>
-        </ul>
-    </div>
-</section>
-<h2 class="h2center">Prices</h2>
-
-<section>
-    <div class="cardPrice">
-        <h2>Porsche</h2>
-        <ol>
-            <li class="price">
-                The 2022 992 911 Turbo S price is $216,100. The price of the 992 911 Turbo S for sale is slightly
-                higher than the 992 Turbo MSRP of $182,900. The 992 Turbo S Cabriolet (also called the 992 Turbo S
-                Cab) starts at $228,900.</li><br>
-        </ol>
-    </div>
-    <div class="cardPrice">
-        <h2>BMW</h2>
-        <ol>
-            <li class="price">The BMW M8 Convertible has a RRP range of £145,090 to £166,090. However, with carwow you
-                can save on average £12,166. Prices start at £133,764 if paying cash. The price of a used BMW M8
-                Convertible on carwow starts at £98,913.</li><br>
-        </ol>
-    </div>
-    <div class="cardPrice">
-        <h2>Dodge</h2>
-        <ol>
-            <li class="price">The 2023 Dodge Challenger starts at $30,545 for the base SXT trim. The R/T trim is your
-                ticket into the V8 club and starts at $39,385, while 807 horsepower can be yours for as little as
-                $83,650. But most buyers stick with something under the $50,000 mark.</li><br>
-
-        </ol>
-    </div>
-</section>
-<section>
-    <div class="cardFav">
-        <h2> Tell me your favorite car</h2>
-
-        <form action="https://www.google.com/search">
-            <div>
-                <label for="car">Check if this is your favorite car:</label>
-            </div>
-            <input type="text" name="q" placeholder="Car" required><br>
-            <button type="submit" class="btn btn-outline-info">Search</button>
-        </form>
-        <form action="/cars">
-            <div class="car">
-                <div>
-                    <label for="car">Enter a car: </label><br>
-                    <input type="text" placeholder="Car" required>
-                </div>
-                <div>
-                    <label for="model">Enter a model: </label><br>
-                    <input type="text" placeholder="Model" required>
-                </div>
-                <div>
-                    <label for="engine">Enter an engine: </label><br>
-                    <input type="text" placeholder="Engine" required>
-                </div>
-                <div>
-                    <label for="hp">Enter horse power: </label><br>
-                    <input class="input" type="text" placeholder="HP" required>
-                </div>
-                <button type="submit" class="btn btn-outline-info">Submit</button>
-            </div>
-    </div>
-    </form>
-    </div>
-</section>
 
 <body>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -150,6 +20,173 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg">
+        <img class="navbar-brand"
+            src="data:image/png;base64,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"></img>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cars">Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#prices">Prices</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#favcar">Favorite car</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h2 id="home">Short story</h2>
+    <p> In the last years, my passion for cars has truly taken off, and among my favorite vehicles, the <a
+            href="https://en.wikipedia.org/wiki/Porsche_992">Porsche
+            992</a>, <a href="https://en.wikipedia.org/wiki/BMW_M8">Bmw M8</a> and <a
+            href="https://en.wikipedia.org/wiki/Dodge_Challenger">Dodge Challenger</a> have become iconic choices for
+        me.</p>
+    <h2 class="h2center" id="cars">Card cars</h2>
+    <section>
+        <div class="card">
+            <img src="https://www.dreamracing.com/assets/porsche-992-gt3.png" class="imgcar">
+            <ul class="infos">
+                <li class="infos" style="font-weight: bold; color:#0ab9ba">
+                    Car: </li>
+                <br>
+                <li class="infos">Porsche</li>
+                <br>
+                <li class="infos" style="font-weight: bold; color:#0ab9ba">Model:</li>
+                <br>
+                <li class="infos">992</li>
+                <br>
+                <li class="infos" style="font-weight: bold; color:#0ab9ba">Engine:</li>
+                <br>
+                <li class="infos">4.0L</li>
+                <br>
+                <li class="infos" style="font-weight: bold; color:#0ab9ba">Horse Power:</li>
+                <br>
+                <li class="infos">518</li>
+                <br>
+            </ul>
+        </div>
+        <div class="card">
+            <img src="https://freebiescloud.com/wp-content/uploads/2020/10/2-11.png" alt="BMW" class="imgcar">
+            <ul class="infos">
+                <li class="infos" style="font-weight: bold; color:#0ab9ba">
+                    Car: </li>
+                <br>
+                <li class="infos">BMW</li>
+                <br>
+                <li class="infos" style="font-weight: bold; color:#0ab9ba" colo>Model:</li>
+                <br>
+                <li class="infos">M8</li>
+                <br>
+                <li class="infos" style="font-weight: bold; color:#0ab9ba">Engine:</li>
+                <br>
+                <li class="infos">4.4L</li>
+                <br>
+                <li class="infos" style="font-weight: bold; color:#0ab9ba">Horse Power:</li>
+                <br>
+                <li class="infos">617</li>
+                <br>
+            </ul>
+        </div>
+        <div class="card">
+            <img src="https://freepngimg.com/download/dodge_challenger/112155-dodge-challenger-hellcat-srt-free-hd-image.png"
+                alt="">
+            <ul class="infos">
+                <li class="infos" style="font-weight: bold; color:#0ab9ba">
+                    Car: </li>
+                <br>
+                <li class="infos">Dodge</li>
+                <br>
+                <li class="infos" style="font-weight: bold; color:#0ab9ba">Model:</li>
+                <br>
+                <li class="infos">Challenger</li>
+                <br>
+                <li class="infos" style="font-weight: bold; color:#0ab9ba">Engine:</li>
+                <br>
+                <li class="infos">6.2L</li>
+                <br>
+                <li class="infos" style="font-weight: bold; color:#0ab9ba">Horse Power:</li>
+                <br>
+                <li class="infos">717</li>
+                <br>
+            </ul>
+        </div>
+    </section>
+    <h2 class="h2center" id="prices">Prices</h2>
+    <section>
+        <div class="cardPrice">
+            <h2>Porsche</h2>
+            <ol>
+                <li class="price">
+                    The 2022 992 911 Turbo S price is $216,100. The price of the 992 911 Turbo S for sale is slightly
+                    higher than the 992 Turbo MSRP of $182,900. The 992 Turbo S Cabriolet (also called the 992 Turbo S
+                    Cab) starts at $228,900.</li><br>
+            </ol>
+        </div>
+        <div class="cardPrice">
+            <h2>BMW</h2>
+            <ol>
+                <li class="price">The BMW M8 Convertible has a RRP range of £145,090 to £166,090. However, with carwow
+                    you
+                    can save on average £12,166. Prices start at £133,764 if paying cash. The price of a used BMW M8
+                    Convertible on carwow starts at £98,913.</li><br>
+            </ol>
+        </div>
+        <div class="cardPrice">
+            <h2>Dodge</h2>
+            <ol>
+                <li class="price">The 2023 Dodge Challenger starts at $30,545 for the base SXT trim. The R/T trim is
+                    your
+                    ticket into the V8 club and starts at $39,385, while 807 horsepower can be yours for as little as
+                    $83,650. But most buyers stick with something under the $50,000 mark.</li><br>
+
+            </ol>
+        </div>
+    </section>
+    <section id="favcar">
+        <div class="cardFav">
+            <h2> Tell me your favorite car</h2>
+
+            <form action="https://www.google.com/search">
+                <div>
+                    <label for="car">Check if this is your favorite car:</label>
+                </div>
+                <input type="text" name="q" placeholder="Car" id="carInput" required><br>
+                <button type="button" class="btn btn-outline-info" id="searchBtn">Search</button>
+            </form>
+            <form id="carForm">
+                <div class="car">
+                    <div>
+                        <label for="car">Enter a car: </label><br>
+                        <input type="text" id="carInputForm" placeholder="Car" required>
+                    </div>
+                    <div>
+                        <label for="model">Enter a model: </label><br>
+                        <input type="text" id="modelInputForm" placeholder="Model" required>
+                    </div>
+                    <div>
+                        <label for="engine">Enter an engine: </label><br>
+                        <input type="text" id="engineInputForm" placeholder="Engine" required>
+                    </div>
+                    <div>
+                        <label for="hp">Enter horse power: </label><br>
+                        <input class="input" type="text" id="hpInputForm" placeholder="HP" required>
+                    </div>
+                    <button type="button" class="btn btn-outline-info" id="submitBtn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="index.js"></script>
 
 </body>
 
