@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning for Vitamin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/app.css">
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="navbar-brand"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAqFBMVEX////yZSIAoUv5vKnyXQjyYBT2nH7xWgAAnkR3wI/xWADyYx7yYhrxVQDyXg/5wq/95Nv708X2mnj4r5YAmzml07T0glT/+fb+9PAAmjf849v6yrrzczz97Obzayu94coXplWQzab82c34tp/0hFjzdkD3ooT1i2L2lG/yaSj0fk7J5tPn9e0Aly3y+/ZIsnFXuHyx28BpvYgxrGJ+xZjV7d/G5ND3qIywd/u0AAAFxklEQVR4nO3ce1PbOBQF8AAxDrGT0BBIIAVaHuXZbrddtt//my1h4li2r46SGa905Tm/v/GMNHoc+SKn1yMiIiIiIiIiIiIiIiIiIiIiIiIhoa/8B2r5SwAi2zskAAAAASUVORK5CYII="></img>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cars">Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#prices">Prices</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#favcar">Favorite car</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2 id="home" class="ml-5">Short story</h2>
+    <p class="ml-5">In the last years, my passion for cars has truly taken off, and among my favorite vehicles, the
+        <a href="https://en.wikipedia.org/wiki/Porsche_992">Porsche 992</a>, <a
+            href="https://en.wikipedia.org/wiki/BMW_M8">Bmw M8</a>,
+        and <a href="https://en.wikipedia.org/wiki/Dodge_Challenger">Dodge Challenger</a> have become iconic choices for
+        me.
+    </p>
+
+    <h2 class="h2center mb-4" id="cars">Card cars</h2>
+    <section class="pb-4">
+        <% cars.forEach(function(car) { %>
+            <div class="card mb-2">
+                <img src="<%= car.imageUrl %>" class="card-img-top" alt="<%= car.brand %> <%= car.model %>">
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="bg-info list-group-item d-flex justify-content-between align-items-center">
+                            <span class="font-weight-bold">Car:</span>
+                            <span>
+                                <%= car.brand %>
+                            </span>
+                        </li>
+                        <li class="bg-info list-group-item d-flex justify-content-between align-items-center">
+                            <span class="font-weight-bold">Model:</span>
+                            <span>
+                                <%= car.model %>
+                            </span>
+                        </li>
+                        <li class="bg-info list-group-item d-flex justify-content-between align-items-center">
+                            <span class="font-weight-bold">Engine:</span>
+                            <span>
+                                <%= car.engine %>
+                            </span>
+                        </li>
+                        <li class="bg-info list-group-item d-flex justify-content-between align-items-center">
+                            <span class="font-weight-bold">Horse Power:</span>
+                            <span>
+                                <%= car.horsepower %>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <% }); %>
+    </section>
+
+
+    <h2 class="h2center mb-4" id="prices">Prices</h2>
+    <section class="pb-4">
+        <div class="cardPrice mb-2">
+            <h2>Porsche</h2>
+            <ol>
+                <li class="price">
+                    The 2022 992 911 Turbo S price is $216,100. The price of the 992 911 Turbo S for sale is slightly
+                    higher than the 992 Turbo MSRP of $182,900. The 992 Turbo S Cabriolet (also called the 992 Turbo S
+                    Cab) starts at $228,900.</li><br>
+            </ol>
+        </div>
+
+        <div class="cardPrice mb-2">
+            <h2>BMW</h2>
+            <ol>
+                <li class="price">The BMW M8 Convertible has a RRP range of £145,090 to £166,090. However, with carwow
+                    you
+                    can save on average £12,166. Prices start at £133,764 if paying cash. The price of a used BMW M8
+                    Convertible on carwow starts at £98,913.</li><br>
+            </ol>
+        </div>
+
+        <div class="cardPrice mb-2">
+            <h2>Dodge</h2>
+            <ol>
+                <li class="price">The 2023 Dodge Challenger starts at $30,545 for the base SXT trim. The R/T trim is
+                    your
+                    ticket into the V8 club and starts at $39,385, while 807 horsepower can be yours for as little as
+                    $83,650. But most buyers stick with something under the $50,000 mark.</li><br>
+            </ol>
+        </div>
+    </section>
+
+    <section id="favcar" class="pb-4">
+        <div class="cardFav mb-2">
+            <h2> Tell me your favorite car</h2>
+
+            <form action="https://www.google.com/search">
+                <div>
+                    <label for="car">Check if this is your favorite car:</label>
+                </div>
+                <input type="text" name="q" placeholder="Car" id="carInput" required><br>
+                <button type="button" class="btn btn-outline-info" id="searchBtn">Search</button>
+            </form>
+            <form id="carForm" action="/cars" method="post">
+                <div class="car">
+                    <div>
+                        <label for="car">Enter a car: </label><br>
+                        <input type="text" id="car" name="brand" placeholder="Car" required>
+                    </div>
+                    <div>
+                        <label for="model">Enter a model: </label><br>
+                        <input type="text" id="model" name="model" placeholder="Model" required>
+                    </div>
+                    <div>
+                        <label for="engine">Enter an engine: </label><br>
+                        <input type="text" id="engine" name="engine" placeholder="Engine" required>
+                    </div>
+                    <div>
+                        <label for="hp">Enter horse power: </label><br>
+                        <input type="text" id="hp" name="horsepower" placeholder="HP" required>
+                    </div>
+                    <button class="btn btn-outline-info">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
