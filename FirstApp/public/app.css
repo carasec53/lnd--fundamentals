@@ -101,7 +101,8 @@ section {
 .cardPrice img,
 .cardFav img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     border-bottom: 2px #0ab9ba solid;
     margin-bottom: 50px;
 }

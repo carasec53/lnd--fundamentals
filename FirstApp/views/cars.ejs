@@ -17,7 +17,11 @@
         <ul class="list-group">
             <% cars.forEach(function(car) { %>
                 <li class="list-group-item">
+                    <img src="<%= car.imageUrl %>" class="card-img-top" alt="<%= car.brand %> <%= car.model %>">
                     <%= car.brand %> - <%= car.model %> - <%= car.engine %> - <%= car.horsepower %> HP
+                                    <form method="post" action="/deleteCar/<%= car._id %>" style="display: inline;">
+                                        <button type="submit" class="btn btn-danger btn-sm float-end"> Delete</button>
+                                    </form>
                 </li>
                 <% }); %>
         </ul>

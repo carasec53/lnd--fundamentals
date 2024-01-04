@@ -58,8 +58,19 @@ app.get('/cars', async (req, res) => {
 app.post('/cars', async (req, res) => {
     const car = new Car(req.body);
     await car.save();
-    res.render('/cars');
+    res.redirect('/cars');
 });
+app.post('/deleteCar/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        await Car.findByIdAndDelete(id);
+        res.redirect('/cars');
+    }
+    catch (error) {
+        console.error("Error fetching cars from MongoDB:", error);
+        res.status(500).send('Internal Server Error');
+    }
+})
 
 
 app.listen(3000, () => {

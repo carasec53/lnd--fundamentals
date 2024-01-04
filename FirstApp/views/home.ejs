@@ -53,8 +53,7 @@
         and <a href="https://en.wikipedia.org/wiki/Dodge_Challenger">Dodge Challenger</a> have become iconic choices for
         me.
     </p>
-
-    <h2 class="h2center mb-4" id="cars">Card cars</h2>
+    <h2 class="h2center mb-4"><a href="http://localhost:3000/cars" class="h2center mb-4" id="cars">All Cars</a></h2>
     <section class="pb-4">
         <% cars.forEach(function(car) { %>
             <div class="card mb-2">
@@ -153,6 +152,10 @@
                     <div>
                         <label for="hp">Enter horse power: </label><br>
                         <input type="text" id="hp" name="horsepower" placeholder="HP" required>
+                    </div>
+                    <div>
+                        <label for="imageUrl">Enter a link for photo: </label><br>
+                        <input type="text" id="imageUrl" name="imageUrl" placeholder="Photo link" required>
                     </div>
                     <button class="btn btn-outline-info">Submit</button>
                 </div>
